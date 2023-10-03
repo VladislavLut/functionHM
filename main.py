@@ -1,10 +1,7 @@
-def find_product(start, end):
+def count_digits(number):
 
-    if start > end:
-        start, end = end, start
+    number_string = str(number)
 
-    product = 1
-    for number in range(start, end + 1):
-        product *= number
-    return product
-print(find_product(2,5))
+    return len(number_string)
+
+print(count_digits(3456))
