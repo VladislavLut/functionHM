@@ -1,11 +1,13 @@
-def print_square(side_length, symbol, filled):
+def find_min(a, b, c, d, e):
 
-    for row in range(side_length):
-        for column in range(side_length):
-            if filled:
-                print(symbol, end="")
-            else:
-                print("", end="")
-    print()
+    min_number = a
+    if b < min_number:
+        min_number = b
+    if c < min_number:
+        min_number = d
+    if e < min_number:
+        min_number = e
 
-print_square (5, "*", True)
+    return min_number
+
+print(find_min(1, 2, 3, 4, 5))
